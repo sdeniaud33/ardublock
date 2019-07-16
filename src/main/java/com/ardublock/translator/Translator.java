@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.swing.JOptionPane;
-
 import com.ardublock.translator.adaptor.BlockAdaptor;
 import com.ardublock.translator.adaptor.OpenBlocksAdaptor;
 import com.ardublock.translator.block.TranslatorBlock;
@@ -37,6 +35,7 @@ public class Translator
 	
 	private Set<String> inputPinSet;
 	private Set<String> outputPinSet;
+	private Set<String> pullupPinSet;
 	
 	private Map<String, String> numberVariableSet;
 	private Map<String, String> booleanVariableSet;
@@ -100,14 +99,21 @@ public class Translator
 		{
 			for (String pinNumber:inputPinSet)
 			{
-				setupFunction.append("pinMode( " + pinNumber + " , INPUT);\n");
+				setupFunction.append("pinMode(" + pinNumber + " , INPUT);\n");
 			}
 		}
 		if (!outputPinSet.isEmpty())
 		{
 			for (String pinNumber:outputPinSet)
 			{
-				setupFunction.append("pinMode( " + pinNumber + " , OUTPUT);\n");
+				setupFunction.append("pinMode(" + pinNumber + " , OUTPUT);\n");
+			}
+		}
+		if (!pullupPinSet.isEmpty())
+		{
+			for (String pinNumber:pullupPinSet)
+			{
+				setupFunction.append("pinMode(" + pinNumber + " , INPUT_PULLUP);\n");
 			}
 		}
 		
@@ -167,6 +173,7 @@ public class Translator
 		functionNameSet = new HashSet<String>();
 		inputPinSet = new HashSet<String>();
 		outputPinSet = new HashSet<String>();
+		pullupPinSet = new HashSet<String>();
 		bodyTranslatreFinishCallbackSet = new HashSet<TranslatorBlock>();
 		
 		numberVariableSet = new HashMap<String, String>();
@@ -226,9 +233,29 @@ public class Translator
 		inputPinSet.add(pinNumber);
 	}
 	
+	public void addInputDigitalPin(int pinNumber)
+	{
+		inputPinSet.add("" + pinNumber);
+	}
+	
 	public void addOutputPin(String pinNumber)
 	{
 		outputPinSet.add(pinNumber);
+	}
+	
+	public void addOutputDigitalPin(int pinNumber)
+	{
+		outputPinSet.add("" + pinNumber);
+	}
+	
+	public void addPullupPin(String pinNumber)
+	{
+		pullupPinSet.add(pinNumber);
+	}
+	
+	public void addPullupDigitalPin(int pinNumber)
+	{
+		pullupPinSet.add("" + pinNumber);
 	}
 	
 	public String getNumberVariable(String userVarName)

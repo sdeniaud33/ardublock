@@ -1,9 +1,7 @@
 package com.ardublock.translator.block.keenlon;
 
 import com.ardublock.translator.Translator;
-import com.ardublock.translator.block.NumberBlock;
 import com.ardublock.translator.block.TranslatorBlock;
-import com.ardublock.translator.block.exception.BlockException;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
 
@@ -47,8 +45,8 @@ public class TFTPrintBlock extends TranslatorBlock
 		String line = translatorBlock.toCode();
 		translatorBlock = this.getRequiredTranslatorBlockAtSocket(1);
 		String str = translatorBlock.toCode();
-		str=this.replace(str,"\\\\","\\");
-		str=this.replace(str,"\\\"","\"");
+		str=TFTPrintBlock.replace(str,"\\\\","\\");
+		str=TFTPrintBlock.replace(str,"\\\"","\"");
 
 		String ret ="tft.printf(" + line + " , " + str;
 

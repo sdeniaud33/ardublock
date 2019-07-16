@@ -21,7 +21,9 @@ public class SerialWriteBlock extends TranslatorBlock
 		
 		
 		
-		    ret="Serial.write("+ret+");\n";
+			ret="Serial.write("+ret+");";
+			translator.addSetupCommand("Serial.begin(9600);");
+
 		return ret;
 	}
 }

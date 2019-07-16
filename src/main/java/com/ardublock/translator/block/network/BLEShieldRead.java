@@ -9,7 +9,6 @@ public class BLEShieldRead extends TranslatorBlock {
 
 	public BLEShieldRead(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label) {
 		super(blockId, translator, codePrefix, codeSuffix, label);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

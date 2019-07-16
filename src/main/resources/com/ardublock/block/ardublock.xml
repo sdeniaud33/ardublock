@@ -26,7 +26,7 @@
 	<BlockGenuses>
 		<BlockGenus name="dummy" kind="command" initlabel="" color="0 0 0" />
 	    <!-- ******************** NEW FOR LOOP **************** -->
-<BlockGenus name="repeat_control" kind="command" color="255 221 0" initlabel="bg.repeat_control">
+<BlockGenus name="repeat_control" kind="command" color="225 169 26" initlabel="bg.repeat_control">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -64,7 +64,7 @@
 		</BlockGenus>
 		
 		<!-- ******************** Controls Menu *************** -->
-		<BlockGenus name="program" kind="command" color="255 240 0" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
+		<BlockGenus name="program" kind="command" color="225 169 26" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="1" name="setup">
@@ -79,7 +79,7 @@
 				<BlockConnector connector-type="cmd" connector-kind="socket" label="bc.loop" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="loop" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
+		<BlockGenus name="loop" kind="command" color="225 169 26" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="2" name="start">
@@ -91,12 +91,12 @@
 			</BlockConnectors>
 		</BlockGenus>
 		<!-- legacy support -->
-		<BlockGenus name="loop1" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
-		<BlockGenus name="loop2" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
-		<BlockGenus name="loop3" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop1" kind="command" color="225 169 26" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop2" kind="command" color="225 169 26" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop3" kind="command" color="225 169 26" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
 		<!-- end of legacy support -->
 
-		<BlockGenus name="delay" kind="command" color="255 221 0" initlabel="bg.delay">
+		<BlockGenus name="delay" kind="command" color="250 0 128" initlabel="bg.delay">
 			<description>
 				<text>program delay in x milliseconds</text>
 			</description>
@@ -107,7 +107,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="if" kind="command" initlabel="bg.if" color="255 221 0">
+		<BlockGenus name="if" kind="command" initlabel="bg.if" color="225 169 26">
 			<description>
 				<text>
 					If
@@ -129,7 +129,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="ifelse" kind="command" initlabel="bg.ifelse" color="255 221 0">
+		<BlockGenus name="ifelse" kind="command" initlabel="bg.ifelse" color="225 169 26">
 			<description>
 				<text>
 					Does the first list of commands if the test specified is
@@ -154,7 +154,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="while" kind="command" initlabel="bg.while" color="255 221 0">
+		<BlockGenus name="while" kind="command" initlabel="bg.while" color="225 169 26">
 			<description>
 				<text>
 					While Block
@@ -173,7 +173,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-	<BlockGenus name="do_while" kind="command" initlabel="bg.do_while" color="255 221 0">
+	<BlockGenus name="do_while" kind="command" initlabel="bg.do_while" color="225 169 26">
           <description>            
 			<text>
                 Do While Block
@@ -193,13 +193,13 @@
           </BlockConnectors>
       </BlockGenus> 
 		
-		<BlockGenus name="break" kind="command" color="255 221 0" initlabel="bg.break">
+		<BlockGenus name="break" kind="command" color="225 169 26" initlabel="bg.break">
 			<description>
 				<text>Repeat the commands for "times"</text>
 			</description>
 		</BlockGenus>
 
-		<BlockGenus name="repeat_times" kind="command" color="255 221 0" initlabel="bg.repeat_times">
+		<BlockGenus name="repeat_times" kind="command" color="225 169 26" initlabel="bg.repeat_times">
 			<description>
 				<text>Repeat the commands for "times"</text>
 				<arg-description n="1" name="repeat">
@@ -217,7 +217,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="repeat" kind="command" color="255 221 0" initlabel="bg.repeat">
+		<BlockGenus name="repeat" kind="command" color="225 169 26" initlabel="bg.repeat">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -240,7 +240,7 @@
 				<BlockConnector label="bc.commands" connector-type="cmd" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="subroutine" kind="command" color="200 200 0" initlabel="bg.subroutine" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
+		<BlockGenus name="subroutine" kind="command" color="225 169 26" initlabel="bg.subroutine" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
 			<description>
 				<text>subroutine</text>
 			</description>
@@ -248,7 +248,7 @@
 				<BlockConnector label="bc.commands" connector-type="cmd" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="subroutine-ref" kind="command" color="200 200 0" initlabel="bg.subroutine" editable-label="yes">
+		<BlockGenus name="subroutine-ref" kind="command" color="225 169 26" initlabel="bg.subroutine" editable-label="yes">
 			<description>
 				<text>invoke subroutine</text>
 			</description>
@@ -273,7 +273,7 @@
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="delay_microseconds" kind="command" color="255 221 0" initlabel="bg.delay_microseconds">
+		<BlockGenus name="delay_microseconds" kind="command" color="225 169 26" initlabel="bg.delay_microseconds">
 			<description>
 				<text>program delay in x milliseconds</text>
 			</description>
@@ -395,7 +395,7 @@
 		
 		<!--****************** Pins *************** -->
 
-		<BlockGenus name="pin-read-digital" kind="data" color="77 191 169" initlabel="bg.pin-read-digital">
+		<BlockGenus name="pin-read-digital" kind="data" color="91 192 222" initlabel="bg.pin-read-digital">
 			<description>
 				<text>Read digital from the pin</text>
 			</description>
@@ -408,7 +408,7 @@
 		</BlockGenus>
 
 
-		<BlockGenus name="pin-read-digital-pullup" kind="data" color="77 191 169" initlabel="bg.pin-write-digital">
+		<BlockGenus name="pin-read-digital-pullup" kind="data" color="91 192 222" initlabel="bg.pin-write-digital">
 			<description>
 				<text>Read digital from the pin. Default High</text>
 			</description>
@@ -420,7 +420,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="pin-read-analog" kind="data" color="77 191 169" initlabel="bg.pin-read-analog">
+		<BlockGenus name="pin-read-analog" kind="data" color="91 192 222" initlabel="bg.pin-read-analog">
 			<description>
 				<text>Read analog value from pin</text>
 			</description>
@@ -431,7 +431,7 @@
 				<BlockConnector connector-type="number" connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="pin-write-digital" kind="command" color="77 191 169" initlabel="bg.pin-write-digital">
+		<BlockGenus name="pin-write-digital" kind="command" color="91 192 222" initlabel="bg.pin-write-digital">
 			<description>
 				<text>write digital to pin</text>
 			</description>
@@ -445,7 +445,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="pin-write-analog" kind="command" color="213 0 0" initlabel="bg.pin-write-analog">
+		<BlockGenus name="pin-write-analog" kind="command" color="91 192 222" initlabel="bg.pin-write-analog">
 			<description>
 				<text>write analog to pin</text>
 			</description>
@@ -459,7 +459,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="pin-toggle" kind="command" color="77 191 169" initlabel="bg.pin-toggle">
+		<BlockGenus name="pin-toggle" kind="command" color="91 192 222" initlabel="bg.pin-toggle">
 			<description>
 				<text>toggle digital pin</text>
 			</description>
@@ -470,7 +470,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="tone" kind="command" color="77 191 169" initlabel="tone">
+		<BlockGenus name="tone" kind="command" color="187 66 195" initlabel="tone">
 			<description>
 				<text>Generates a square wave of the specified frequency (and 50%
 					duty cycle) on a pin.
@@ -487,7 +487,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="tone_time" kind="command" color="77 191 169" initlabel="tone">
+		<BlockGenus name="tone_time" kind="command" color="187 66 195" initlabel="tone">
 			<description>
 				<text>Generates a square wave of the specified frequency (and 50%
 					duty cycle) on a pin.
@@ -506,7 +506,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="no_tone" kind="command" color="77 191 169" initlabel="noTone">
+		<BlockGenus name="no_tone" kind="command" color="187 66 195" initlabel="noTone">
 			<description>
 				<text>Stops the generation of a square wave triggered by tone().
 				</text>
@@ -1226,7 +1226,7 @@
 
 		<!--****************** Mathematical Operators *************** -->
 
-		<BlockGenus name="addition" kind="function" initlabel="bg.addition" color="149 193 31">
+		<BlockGenus name="addition" kind="function" initlabel="bg.addition" color="114 147 71">
 			<description>
 				<text>
 					Reports the sum of two numbers (
@@ -1246,7 +1246,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="subtraction" kind="function" initlabel="bg.subtraction" color="149 193 31">
+		<BlockGenus name="subtraction" kind="function" initlabel="bg.subtraction" color="114 147 71">
 			<description>
 				<text>
 					Reports the difference of two numbers (
@@ -1266,7 +1266,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="multiplication" kind="function" initlabel="bg.multiplication" color="149 193 31">
+		<BlockGenus name="multiplication" kind="function" initlabel="bg.multiplication" color="114 147 71">
 			<description>
 				<text>
 					Reports the product of two numbers (
@@ -1286,7 +1286,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="division" kind="function" initlabel="bg.division" color="149 193 31">
+		<BlockGenus name="division" kind="function" initlabel="bg.division" color="114 147 71">
 			<description>
 				<text>
 					Reports the quotient of two numbers (
@@ -1306,7 +1306,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="modulo" kind="function" color="149 193 31" initlabel="bg.modulo">
+		<BlockGenus name="modulo" kind="function" color="114 147 71" initlabel="bg.modulo">
 			<BlockConnectors>
 				<BlockConnector label="" connector-kind="plug" connector-type="number" position-type="mirror" >
 					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
@@ -1317,14 +1317,14 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="abs" kind="function" color="149 193 31" initlabel="bg.abs">
+		<BlockGenus name="abs" kind="function" color="114 147 71" initlabel="bg.abs">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="pow" kind="function" color="149 193 31" initlabel="bg.pow">
+		<BlockGenus name="pow" kind="function" color="114 147 71" initlabel="bg.pow">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.base" />
@@ -1332,35 +1332,35 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="sqrt" kind="function" color="149 193 31" initlabel="bg.sqrt">
+		<BlockGenus name="sqrt" kind="function" color="114 147 71" initlabel="bg.sqrt">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="sin" kind="function" color="149 193 31" initlabel="bg.sin">
+		<BlockGenus name="sin" kind="function" color="114 147 71" initlabel="bg.sin">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="cos" kind="function" color="149 193 31" initlabel="bg.cos">
+		<BlockGenus name="cos" kind="function" color="114 147 71" initlabel="bg.cos">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="tan" kind="function" color="149 193 31" initlabel="bg.tan">
+		<BlockGenus name="tan" kind="function" color="114 147 71" initlabel="bg.tan">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="random" kind="data" color="149 193 31" initlabel="bg.random">
+		<BlockGenus name="random" kind="data" color="114 147 71" initlabel="bg.random">
 			<description>
 				<text>generate a random number less than the number</text>
 			</description>
@@ -1372,7 +1372,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="random_range" kind="function" color="149 193 31" initlabel="bg.pow">
+		<BlockGenus name="random_range" kind="function" color="114 147 71" initlabel="bg.pow">
 			<description>
 				<text>Generate random number between min and (max - 1)</text>
 			</description>
@@ -1387,7 +1387,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="min" kind="function" color="149 193 31" initlabel="bg.min">
+		<BlockGenus name="min" kind="function" color="114 147 71" initlabel="bg.min">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" >
 					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
@@ -1398,7 +1398,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="max" kind="function" color="149 193 31" initlabel="bg.max">
+		<BlockGenus name="max" kind="function" color="114 147 71" initlabel="bg.max">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" >
 					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
@@ -1408,7 +1408,7 @@
 				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="map_common" kind="data" color="149 193 31" initlabel="bg.map_common">
+		<BlockGenus name="map_common" kind="data" color="114 147 71" initlabel="bg.map_common">
 			<description>
 				<text>map value from [0, 1023] to [0, 255]</text>
 			</description>
@@ -1420,7 +1420,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="map" kind="function" color="149 193 31" initlabel="bg.map">
+		<BlockGenus name="map" kind="function" color="114 147 71" initlabel="bg.map">
 			<description>
 				<text>map</text>
 			</description>
@@ -1442,7 +1442,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="toint" kind="function" color="149 193 31" initlabel="bg.toint">
+		<BlockGenus name="toint" kind="function" color="114 147 71" initlabel="bg.toint">
 			<description>
 				<text>to int</text>
 			</description>
@@ -1453,7 +1453,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="constrain" kind="function" color="149 193 31" initlabel="bg.constrain">
+		<BlockGenus name="constrain" kind="function" color="114 147 71" initlabel="bg.constrain">
 			<description>
 				<text>Constrain a number between two values</text>
 			</description>
@@ -1471,7 +1471,7 @@
 
 		<!--****************** Logical Operators *************** -->
 
-		<BlockGenus name="greater" kind="function" color="222 131 51" initlabel="bg.greater">
+		<BlockGenus name="greater" kind="function" color="92 183 19" initlabel="bg.greater">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1485,7 +1485,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="less" kind="function" color="222 131 51" initlabel="bg.less">
+		<BlockGenus name="less" kind="function" color="92 183 19" initlabel="bg.less">
 			<description>
 				<text>is upper number less then lower?</text>
 			</description>
@@ -1499,7 +1499,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="equal" kind="function" color="222 131 51" initlabel="bg.equal">
+		<BlockGenus name="equal" kind="function" color="92 183 19" initlabel="bg.equal">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1512,63 +1512,7 @@
 				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="equal_digital" kind="function" color="222 131 51" initlabel="bg.equal_digital">
-			<description>
-				<text>is upper number greater then lower?</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
-					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
-					<DefaultArg genus-name="dummy" label="" />
-				</BlockConnector>
-				<BlockConnector connector-type="boolean" connector-kind="socket" position-type="bottom" />
-				<BlockConnector connector-type="boolean" connector-kind="socket" position-type="bottom" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="greater_equal" kind="function" color="222 131 51" initlabel="bg.greater_equal">
-			<description>
-				<text>is upper number greater then lower?</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
-					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
-					<DefaultArg genus-name="dummy" label="" />
-				</BlockConnector>
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="less_equal" kind="function" color="222 131 51" initlabel="bg.less_equal">
-			<description>
-				<text>is upper number greater then lower?</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
-					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
-					<DefaultArg genus-name="dummy" label="" />
-				</BlockConnector>
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="not_equal" kind="function" color="222 131 51" initlabel="bg.not_equal">
-			<description>
-				<text>is upper number greater then lower?</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
-					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
-					<DefaultArg genus-name="dummy" label="" />
-				</BlockConnector>
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="not_equal_digital" kind="function" color="222 131 51" initlabel="bg.not_equal_digital">
+		<BlockGenus name="equal_digital" kind="function" color="92 183 19" initlabel="bg.equal_digital">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1582,7 +1526,63 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_greater" kind="data" color="222 131 51" initlabel="bg.string_greater">
+		<BlockGenus name="greater_equal" kind="function" color="92 183 19" initlabel="bg.greater_equal">
+			<description>
+				<text>is upper number greater then lower?</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
+					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+					<DefaultArg genus-name="dummy" label="" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="less_equal" kind="function" color="92 183 19" initlabel="bg.less_equal">
+			<description>
+				<text>is upper number greater then lower?</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
+					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+					<DefaultArg genus-name="dummy" label="" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="not_equal" kind="function" color="92 183 19" initlabel="bg.not_equal">
+			<description>
+				<text>is upper number greater then lower?</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
+					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+					<DefaultArg genus-name="dummy" label="" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+				<BlockConnector connector-type="number" connector-kind="socket" position-type="bottom" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="not_equal_digital" kind="function" color="92 183 19" initlabel="bg.not_equal_digital">
+			<description>
+				<text>is upper number greater then lower?</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
+					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+					<DefaultArg genus-name="dummy" label="" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" position-type="bottom" />
+				<BlockConnector connector-type="boolean" connector-kind="socket" position-type="bottom" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="string_greater" kind="data" color="92 183 19" initlabel="bg.string_greater">
 			<description>
 				<text>is upper string greater then lower?</text>
 			</description>
@@ -1597,7 +1597,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_less" kind="data" color="222 131 51" initlabel="bg.string_less">
+		<BlockGenus name="string_less" kind="data" color="92 183 19" initlabel="bg.string_less">
 			<description>
 				<text>is upper string less then lower?</text>
 			</description>
@@ -1612,7 +1612,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_equal" kind="data" color="222 131 51" initlabel="bg.string_equal">
+		<BlockGenus name="string_equal" kind="data" color="92 183 19" initlabel="bg.string_equal">
 			<description>
 				<text>is upper string greater then lower?</text>
 			</description>
@@ -1628,7 +1628,7 @@
 		</BlockGenus>
 
 
-		<BlockGenus name="string_greater_equal" kind="data" color="222 131 51" initlabel="bg.string_greater_equal">
+		<BlockGenus name="string_greater_equal" kind="data" color="92 183 19" initlabel="bg.string_greater_equal">
 			<description>
 				<text>is upper string greater then lower?</text>
 			</description>
@@ -1643,7 +1643,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_less_equal" kind="data" color="222 131 51" initlabel="bg.string_less_equal">
+		<BlockGenus name="string_less_equal" kind="data" color="92 183 19" initlabel="bg.string_less_equal">
 			<description>
 				<text>is upper string greater then lower?</text>
 			</description>
@@ -1658,7 +1658,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_not_equal" kind="data" color="222 131 51" initlabel="bg.string_not_equal">
+		<BlockGenus name="string_not_equal" kind="data" color="92 183 19" initlabel="bg.string_not_equal">
 			<description>
 				<text>is upper string greater then lower?</text>
 			</description>
@@ -1674,7 +1674,7 @@
 		</BlockGenus>
 		
 
-		<BlockGenus name="string_equalsIgnoreCase" kind="data" color="222 131 51" initlabel="bg.string_equalsIgnoreCase">
+		<BlockGenus name="string_equalsIgnoreCase" kind="data" color="92 183 19" initlabel="bg.string_equalsIgnoreCase">
 			<description>
 				<text>is equalsIgnoreCase then lower?</text>
 			</description>
@@ -1689,7 +1689,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="string_equals" kind="data" color="222 131 51" initlabel="bg.string_equals">
+		<BlockGenus name="string_equals" kind="data" color="92 183 19" initlabel="bg.string_equals">
 			<description>
 				<text>is equals then ?</text>
 			</description>
@@ -1704,7 +1704,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="string_compareTo" kind="data" color="222 131 51" initlabel="bg.string_compareTo">
+		<BlockGenus name="string_compareTo" kind="data" color="92 183 19" initlabel="bg.string_compareTo">
 			<description>
 				<text>is compareTo ?</text>
 			</description>
@@ -1719,7 +1719,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="string_toInt" kind="data" color="222 131 51" initlabel="bg.string_toInt">
+		<BlockGenus name="string_toInt" kind="data" color="92 183 19" initlabel="bg.string_toInt">
 			<description>
 				<text>is a numeric string compared to the number it represents</text>
 			</description>
@@ -1734,7 +1734,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="and" kind="data" initlabel="bg.and" color="222 131 51">
+		<BlockGenus name="and" kind="data" initlabel="bg.and" color="92 183 19">
 			<description>
 				<text>
 					Reports true if both of the two conditions are true.
@@ -1748,7 +1748,7 @@
 		</BlockGenus>
 
 
-		<BlockGenus name="or" kind="function" initlabel="bg.or" color="222 131 51">
+		<BlockGenus name="or" kind="function" initlabel="bg.or" color="92 183 19">
 			<description>
 				<text>
 					Reports true if one or both of the two conditions are true.
@@ -1761,7 +1761,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="not" kind="function" initlabel="bg.not" color="222 131 51">
+		<BlockGenus name="not" kind="function" initlabel="bg.not" color="92 183 19">
 			<description>
 				<text>
 					Reports the opposite of
@@ -1775,7 +1775,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="equal_poly" kind="function" color="222 131 51" initlabel="bg.equal_poly">
+		<BlockGenus name="equal_poly" kind="function" color="92 183 19" initlabel="bg.equal_poly">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1791,7 +1791,7 @@
 		
 
 
-		<BlockGenus name="not_equal_poly" kind="function" color="222 131 51" initlabel="bg.not_equal_poly">
+		<BlockGenus name="not_equal_poly" kind="function" color="92 183 19" initlabel="bg.not_equal_poly">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1805,7 +1805,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="string_equal" kind="function" color="222 131 51" initlabel="bg.string_equal">
+		<BlockGenus name="string_equal" kind="function" color="92 183 19" initlabel="bg.string_equal">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1819,7 +1819,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="string_empty" kind="function" color="222 131 51" initlabel="bg.string_empty">
+		<BlockGenus name="string_empty" kind="function" color="92 183 19" initlabel="bg.string_empty">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1831,7 +1831,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-				<BlockGenus name="equal_string" kind="function" color="222 131 51" initlabel="bg.equal_string">
+				<BlockGenus name="equal_string" kind="function" color="92 183 19" initlabel="bg.equal_string">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1845,7 +1845,7 @@
 			</BlockConnectors>
 		</BlockGenus>	
 		
-		<BlockGenus name="not_equal_string" kind="function" color="222 131 51" initlabel="bg.not_equal_string">
+		<BlockGenus name="not_equal_string" kind="function" color="92 183 19" initlabel="bg.not_equal_string">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -1860,7 +1860,7 @@
 		</BlockGenus>	
 
 		<!--****************** Numbers/Constants *************** -->
-		<BlockGenus name="millis" kind="data" color="255 153 204" initlabel="bg.millis">
+		<BlockGenus name="millis" kind="data" color="250 0 128" initlabel="bg.millis">
 			<description>
 				<text>Time in milliseconds</text>
 			</description>
@@ -2243,7 +2243,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-	    <BlockGenus name="setter_variable_String" kind="command" color="245 245 245" initlabel="bg.setter_variable_String">
+	    <BlockGenus name="setter_variable_String" kind="command" color="70 70 70" initlabel="bg.setter_variable_String">
 	      <description>
 	        <text>set String variable</text>
 	      </description>
@@ -2257,7 +2257,7 @@
 	      </BlockConnectors>
 	    </BlockGenus>
 				
-	    <BlockGenus name="variable_String" kind="data" initlabel="bg.variable_String" editable-label="yes" is-label-value="yes" color="245 245 245">
+	    <BlockGenus name="variable_String" kind="data" initlabel="bg.variable_String" editable-label="yes" is-label-value="yes" color="70 70 70">
 	      <description>
 	        <text>
 	          Variable String
@@ -2512,37 +2512,37 @@
 
 		<!-- ******************** Communication *************** -->
 
-		<BlockGenus name="serial_read" kind="data" color="245 245 245" initlabel="bg.serial_read">
+		<BlockGenus name="serial_read" kind="data" color="70 70 70" initlabel="bg.serial_read">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="serial_parseInt" kind="data" color="245 245 245" initlabel="bg.serial_parseInt">
+		<BlockGenus name="serial_parseInt" kind="data" color="70 70 70" initlabel="bg.serial_parseInt">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_read_poly" kind="data" color="245 245 245" initlabel="bg.serial_read">
+		<BlockGenus name="serial_read_poly" kind="data" color="70 70 70" initlabel="bg.serial_read">
 			<BlockConnectors>
 				<BlockConnector connector-type="poly" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_available" kind="data" color="245 245 245" initlabel="bg.serial_available">
+		<BlockGenus name="serial_available" kind="data" color="70 70 70" initlabel="bg.serial_available">
 			<BlockConnectors>
 				<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="serial_available2" kind="data" color="245 245 245" initlabel="bg.serial_available2">
+		<BlockGenus name="serial_available2" kind="data" color="70 70 70" initlabel="bg.serial_available2">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="serial_write" kind="command" color="245 245 245" initlabel="serial_write">
+		<BlockGenus name="serial_write" kind="command" color="70 70 70" initlabel="serial_write">
 			<description>
 				<text>send message via Serial port</text>
 			</description>
@@ -2553,7 +2553,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_print" kind="command" color="245 245 245" initlabel="bg.serial_print">
+		<BlockGenus name="serial_print" kind="command" color="70 70 70" initlabel="bg.serial_print">
 			<description>
 				<text>send message via Serial port</text>
 			</description>
@@ -2567,7 +2567,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="message" kind="data" color="245 245 245" initlabel="bg.message" editable-label="yes">
+		<BlockGenus name="message" kind="data" color="70 70 70" initlabel="bg.message" editable-label="yes">
 			<description>
 				<text>string message</text>
 			</description>
@@ -2577,7 +2577,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="glue_sn" kind="data" color="245 245 245" initlabel="bg.glue_sn">
+		<BlockGenus name="glue_sn" kind="data" color="70 70 70" initlabel="bg.glue_sn">
 			<description>
 				<text>glue number to string</text>
 			</description>
@@ -2587,7 +2587,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="glue_sb" kind="data" color="245 245 245" initlabel="bg.glue_sb">
+		<BlockGenus name="glue_sb" kind="data" color="70 70 70" initlabel="bg.glue_sb">
 			<description>
 				<text>glue boolean to string</text>
 			</description>
@@ -2597,7 +2597,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="glue_poly" kind="data" color="245 245 245" initlabel="bg.glue_poly" editable-label="no">
+		<BlockGenus name="glue_poly" kind="data" color="70 70 70" initlabel="bg.glue_poly" editable-label="no">
 			<description>
 				<text></text>
 			</description>
@@ -2607,7 +2607,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="wire_write" kind="command" color="245 245 245" initlabel="bg.wire_write">
+		<BlockGenus name="wire_write" kind="command" color="70 70 70" initlabel="bg.wire_write">
 			<description>
 				<text>write data via I2C</text>
 			</description>
@@ -2624,7 +2624,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="wire_read" kind="data" color="245 245 245" initlabel="bg.wire_read">
+		<BlockGenus name="wire_read" kind="data" color="70 70 70" initlabel="bg.wire_read">
 			<description>
 				<text>read data from i2c</text>
 			</description>
@@ -2639,7 +2639,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="wire_isread" kind="data" color="245 245 245" initlabel="bg.wire_isread">
+		<BlockGenus name="wire_isread" kind="data" color="70 70 70" initlabel="bg.wire_isread">
 			<description>
 				<text>is last read from I2C success?</text>
 			</description>
@@ -2969,7 +2969,7 @@
 		</BlockGenus>
 
 		<!-- ******************** Unused/Obsoletes *************** -->
-		<BlockGenus name="glue_msg" kind="data" color="245 245 245" initlabel="bg.glue_msg" editable-label="yes">
+		<BlockGenus name="glue_msg" kind="data" color="70 70 70" initlabel="bg.glue_msg" editable-label="yes">
 			<description>
 				<text></text>
 			</description>
@@ -3002,7 +3002,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_println" kind="command" color="245 245 245" initlabel="bg.serial_println">
+		<BlockGenus name="serial_println" kind="command" color="70 70 70" initlabel="bg.serial_println">
 			<description>
 				<text>send message via Serial port</text>
 			</description>
@@ -3013,7 +3013,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="ir_setport" kind="command" color="245 245 245" initlabel="bg.ir_setport">
+		<BlockGenus name="ir_setport" kind="command" color="70 70 70" initlabel="bg.ir_setport">
 			<description>
 				<text></text>
 			</description>
@@ -3024,7 +3024,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="ir_getcode" kind="command" color="245 245 245" initlabel="bg.ir_getcode">
+		<BlockGenus name="ir_getcode" kind="command" color="70 70 70" initlabel="bg.ir_getcode">
 			<description>
 				<text></text>
 			</description>
@@ -3063,8 +3063,128 @@
 			</description>
 		</BlockGenus>
 		
+		<!--************************************************************** Elegoo ********************************************************************** -->
+		<BlockGenus name="Elegoo_LED" kind="command" color="13 152 164" initlabel="bg.Elegoo_LED">
+			<description>
+				<text>Diode LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/elegoo/elegoo_LED.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_RGB_LED" kind="command" color="13 152 164" initlabel="bg.Elegoo_RGB_LED">
+			<description>
+				<text>Diode LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Rouge : broche">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Rouge : value">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Bleu : broche">
+					<DefaultArg genus-name="number" label="2" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Bleu : value">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Vert : broche">
+					<DefaultArg genus-name="number" label="3" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Vert : value">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/elegoo/Elegoo_RGB_LED.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_PushButton" kind="data" color="13 152 164" initlabel="bg.Elegoo_PushButton">
+			<description>
+				<text>Bouton</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/elegoo/elegoo_PushButton.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Elegoo_Keypad" kind="command" color="13 152 164" initlabel="bg.Elegoo_Keypad">
+			<description>
+				<text>Clavier</text>
+			</description>			
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="1ere broche">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/keypad_12_button.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_Keypad_GetChar" kind="data" color="13 152 164" initlabel="bg.Elegoo_Keypad_GetChar">
+			<description>
+				<text>Pressed key</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="plug" label="letter"/>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_Keypad_IsKeyPressed" kind="data" color="13 152 164" initlabel="bg.Elegoo_Keypad_IsKeyPressed">
+			<description>
+				<text>Pressed key</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" />
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_LCD_Display" kind="command" color="13 152 164" initlabel="bg.Elegoo_LCD_Display">
+			<description>
+				<text>16 Char by 2 Line LCD display</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="socket" label="bc.print">
+					<DefaultArg genus-name="message" label="Bonjour"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.line_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.character_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/LCD16by2.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
-		
+
+
+
 		<!--************************************************************** TinkerKit! ********************************************************************** -->
 		<BlockGenus name="Tinker_LED" kind="command" color="13 152 164" initlabel="bg.Tinker_LED">
 			<description>
@@ -3572,7 +3692,7 @@
 			</Images>
 		</BlockGenus>
 
-		<BlockGenus name="df_digital_infrared_motion_sensor" kind="data" color="255 102 0" initlabel="bg.df_digital_infrared_motion_sensor">
+		<BlockGenus name="df_digital_infrared_motion_sensor" kind="data" color="13 152 164" initlabel="bg.df_digital_infrared_motion_sensor">
 			<BlockConnectors>
 				<BlockConnector connector-type="boolean" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
@@ -3642,7 +3762,7 @@
 			</Images>
 		</BlockGenus>
 
-		<BlockGenus name="df_joystick_module_button" kind="data" color="255 102 0" initlabel="bg.df_joystick_module_button">
+		<BlockGenus name="df_joystick_module_button" kind="data" color="13 152 164" initlabel="bg.df_joystick_module_button">
 			<BlockConnectors>
 				<BlockConnector connector-type="boolean" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
@@ -3857,7 +3977,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
-		<BlockGenus name="df_joystick_module_x" kind="data" color="255 102 0" initlabel="bg.df_joystick_module_x">
+		<BlockGenus name="df_joystick_module_x" kind="data" color="13 152 164" initlabel="bg.df_joystick_module_x">
 			<description>
 				<text>Read analog value from pin</text>
 			</description>
@@ -3873,7 +3993,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
-		<BlockGenus name="df_joystick_module_y" kind="data" color="255 102 0" initlabel="bg.df_joystick_module_y">
+		<BlockGenus name="df_joystick_module_y" kind="data" color="13 152 164" initlabel="bg.df_joystick_module_y">
 			<description>
 				<text>Read analog value from pin</text>
 			</description>
@@ -10717,7 +10837,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="trigger_equal" kind="data" color="222 131 51" initlabel="bg.trigger_equal" editable-label="no">
+		<BlockGenus name="trigger_equal" kind="data" color="92 183 19" initlabel="bg.trigger_equal" editable-label="no">
 			<description>
 				<text>
 					trigger equal
@@ -10728,7 +10848,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="trigger_greater" kind="data" color="222 131 51" initlabel="bg.trigger_greater" editable-label="no">
+		<BlockGenus name="trigger_greater" kind="data" color="92 183 19" initlabel="bg.trigger_greater" editable-label="no">
 			<description>
 				<text>
 					trigger greater
@@ -10739,7 +10859,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="trigger_less" kind="data" color="222 131 51" initlabel="bg.trigger_less" editable-label="no">
+		<BlockGenus name="trigger_less" kind="data" color="92 183 19" initlabel="bg.trigger_less" editable-label="no">
 			<description>
 				<text>
 					trigger less
@@ -11723,7 +11843,17 @@
 
 	<BlockDrawerSets>
 		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no">
-			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="255 255 0">
+			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="225 169 26">
+				<BlockGenusMember>loop</BlockGenusMember>
+				<BlockGenusMember>program</BlockGenusMember>
+				<BlockGenusMember>if</BlockGenusMember>
+				<BlockGenusMember>ifelse</BlockGenusMember>
+				<BlockGenusMember>while</BlockGenusMember>
+				<BlockGenusMember>do_while</BlockGenusMember>
+				<BlockGenusMember>repeat_times</BlockGenusMember>
+				<BlockGenusMember>break</BlockGenusMember>
+			</BlockDrawer>
+			<!-- <BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="255 255 0">
 				<BlockGenusMember>loop</BlockGenusMember>
 				<BlockGenusMember>program</BlockGenusMember>
 				<BlockGenusMember>delay</BlockGenusMember>
@@ -11742,8 +11872,12 @@
 				<BlockGenusMember>subroutine_var</BlockGenusMember>
 				<BlockGenusMember>subroutine-ref_var</BlockGenusMember>
 				<BlockGenusMember>ref_var</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="225 169 26" name="bd.subroutines">
+				<BlockGenusMember>subroutine</BlockGenusMember>
+				<BlockGenusMember>subroutine-ref</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="29 152 155" name="bd.pins" type="factory">
+			<!-- <BlockDrawer button-color="29 152 155" name="bd.pins" type="factory">
 				<BlockGenusMember>pin-write-digital</BlockGenusMember>
 				<BlockGenusMember>pin-toggle</BlockGenusMember>
 				<BlockGenusMember>pin-read-digital</BlockGenusMember>
@@ -11756,8 +11890,14 @@
 				<BlockGenusMember>pinListDigital_D0</BlockGenusMember>
 				<BlockGenusMember>pinListAnalog_A0</BlockGenusMember>
 				<BlockGenusMember>pinListAnalogWrite_D3</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="91 192 222" name="bd.pins" type="factory">
+				<BlockGenusMember>pin-read-digital</BlockGenusMember>
+				<BlockGenusMember>pin-read-analog</BlockGenusMember>
+				<BlockGenusMember>pin-write-digital</BlockGenusMember>
+				<BlockGenusMember>pin-write-analog</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="255 163 82" name="bd.logic" type="factory">
+			<!-- <BlockDrawer button-color="255 163 82" name="bd.logic" type="factory">
 				<BlockGenusMember>greater</BlockGenusMember>
 				<BlockGenusMember>less</BlockGenusMember>
 				<BlockGenusMember>equal</BlockGenusMember>
@@ -11776,6 +11916,24 @@
 				<BlockGenusMember>string_equal</BlockGenusMember>
 				<BlockGenusMember>string_empty</BlockGenusMember>
 				<BlockGenusMember>string_toInt</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="92 183 19" name="bd.logic" type="factory">
+				<BlockGenusMember>greater</BlockGenusMember>
+				<BlockGenusMember>less</BlockGenusMember>
+				<BlockGenusMember>equal</BlockGenusMember>
+				<BlockGenusMember>greater_equal</BlockGenusMember>
+				<BlockGenusMember>less_equal</BlockGenusMember>
+				<BlockGenusMember>not_equal</BlockGenusMember>
+				<BlockGenusMember>equal_digital</BlockGenusMember>
+				<BlockGenusMember>not_equal_digital</BlockGenusMember>
+				<BlockGenusMember>equal_poly</BlockGenusMember>
+				<BlockGenusMember>not_equal_poly</BlockGenusMember>
+				<BlockGenusMember>equal_string</BlockGenusMember>
+				<BlockGenusMember>not_equal_string</BlockGenusMember>
+				<BlockGenusMember>string_empty</BlockGenusMember>
+				<BlockGenusMember>and</BlockGenusMember>
+				<BlockGenusMember>or</BlockGenusMember>
+				<BlockGenusMember>not</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="114 147 71" name="bd.operators" type="factory">
 				<BlockGenusMember>addition</BlockGenusMember>
@@ -11794,7 +11952,7 @@
 				<BlockGenusMember>toint</BlockGenusMember>
 				<BlockGenusMember>constrain</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="232 156 149" name="bd.number" type="factory">
+			<!-- <BlockDrawer button-color="232 156 149" name="bd.number" type="factory">
 				<BlockGenusMember>number</BlockGenusMember>
 				<BlockGenusMember>setter_variable_number</BlockGenusMember>
 				<BlockGenusMember>variable_number</BlockGenusMember>
@@ -11821,19 +11979,34 @@
 				<BlockGenusMember>create_variable_vector</BlockGenusMember>
 				<BlockGenusMember>variable_vector</BlockGenusMember>
 				<BlockGenusMember>setter_variable_vector</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="255 106 0" name="bd.number" type="factory">
+				<BlockGenusMember>number</BlockGenusMember>
+				<BlockGenusMember>setter_variable_number_unsigned_long</BlockGenusMember>
+				<BlockGenusMember>variable_number_unsigned_long</BlockGenusMember>
+				<BlockGenusMember>setter_variable_number</BlockGenusMember>
+				<BlockGenusMember>variable_number</BlockGenusMember>
+				<BlockGenusMember>setter_variable_digital</BlockGenusMember>
+				<BlockGenusMember>variable_digital</BlockGenusMember>
+				<BlockGenusMember>digital-low</BlockGenusMember>
+				<BlockGenusMember>digital-high</BlockGenusMember>
+				<BlockGenusMember>true</BlockGenusMember>
+				<BlockGenusMember>false</BlockGenusMember>
+				<BlockGenusMember>setter_variable_number_double</BlockGenusMember>
+				<BlockGenusMember>variable_number_double</BlockGenusMember>
+				<BlockGenusMember>number_double</BlockGenusMember>
+				<BlockGenusMember>setter_variable_String</BlockGenusMember>
+				<BlockGenusMember>variable_String</BlockGenusMember>
+				<BlockGenusMember>message</BlockGenusMember>
+				<BlockGenusMember>setter_variable_char</BlockGenusMember>
+				<BlockGenusMember>char</BlockGenusMember>
+				<BlockGenusMember>variable_poly</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
-				<BlockGenusMember>servo_default</BlockGenusMember>
-				<BlockGenusMember>ultrasonic</BlockGenusMember>
-				<BlockGenusMember>df_dht11_temperature</BlockGenusMember>
-				<BlockGenusMember>df_dht11_humidity</BlockGenusMember>
-				<BlockGenusMember>LCD_I2C_Sainsmart_20by4</BlockGenusMember>
-				<BlockGenusMember>LCD_command_lightOff</BlockGenusMember>
-				<BlockGenusMember>LCD_PLL_Sainsmart_16by2</BlockGenusMember>
-				<BlockGenusMember>number-single-I2C-address</BlockGenusMember>
-				<BlockGenusMember>number-single-fixed-parallel</BlockGenusMember>
+			<BlockDrawer button-color="250 0 128" name="bd.time">
+				<BlockGenusMember>millis</BlockGenusMember>
+				<BlockGenusMember>delay</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="255 255 255" name="bd.communication" type="factory">
+			<!-- <BlockDrawer button-color="255 255 255" name="bd.communication" type="factory">
 				<BlockGenusMember>serial_write</BlockGenusMember>
 				<BlockGenusMember>serial_print</BlockGenusMember>
 				<BlockGenusMember>glue_sn</BlockGenusMember>
@@ -11861,8 +12034,37 @@
 				<BlockGenusMember>Serialplus_send_variable_digital</BlockGenusMember>
 				<BlockGenusMember>Serialplus_receive_number</BlockGenusMember>
 				<BlockGenusMember>Serialplus_receive_digital</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="70 70 70" name="bd.communication" type="factory">
+				<BlockGenusMember>serial_available</BlockGenusMember>
+				<BlockGenusMember>serial_read</BlockGenusMember>
+				<BlockGenusMember>serial_print</BlockGenusMember>
+				<BlockGenusMember>glue_sn</BlockGenusMember>
+				<BlockGenusMember>glue_sb</BlockGenusMember>
+				<BlockGenusMember>glue_poly</BlockGenusMember>
+				<BlockGenusMember>setter_variable_String</BlockGenusMember>
+				<BlockGenusMember>variable_String</BlockGenusMember>
+				<BlockGenusMember>message</BlockGenusMember>
+				<!-- <BlockGenusMember>ts_string_to_int</BlockGenusMember>
+				<BlockGenusMember>ts_parse_string</BlockGenusMember> -->
 			</BlockDrawer>
-			<BlockDrawer button-color="26 97 218" name="bd.scoop">
+			<BlockDrawer button-color="187 66 195" name="bd.sounds" type="factory">
+				<BlockGenusMember>tone</BlockGenusMember>
+				<BlockGenusMember>tone_time</BlockGenusMember>
+				<BlockGenusMember>no_tone</BlockGenusMember>
+			</BlockDrawer>
+			<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
+				<BlockGenusMember>servo_default</BlockGenusMember>
+				<BlockGenusMember>ultrasonic</BlockGenusMember>
+				<BlockGenusMember>df_dht11_temperature</BlockGenusMember>
+				<BlockGenusMember>df_dht11_humidity</BlockGenusMember>
+				<!-- <BlockGenusMember>LCD_I2C_Sainsmart_20by4</BlockGenusMember> -->
+				<!-- <BlockGenusMember>LCD_command_lightOff</BlockGenusMember> -->
+				<!-- <BlockGenusMember>LCD_PLL_Sainsmart_16by2</BlockGenusMember> -->
+				<!-- <BlockGenusMember>number-single-I2C-address</BlockGenusMember> -->
+				<!-- <BlockGenusMember>number-single-fixed-parallel</BlockGenusMember> -->
+			</BlockDrawer>
+			<!-- <BlockDrawer button-color="26 97 218" name="bd.scoop">
 			    <BlockGenusMember>scoop_task</BlockGenusMember>
 				<BlockGenusMember>scoop_loop</BlockGenusMember>
 				<BlockGenusMember>scoop_sleep</BlockGenusMember>
@@ -11872,8 +12074,8 @@
 				<BlockGenusMember>scoop_event_falling</BlockGenusMember>
 				<BlockGenusMember>scoop_event_rising</BlockGenusMember>
 				<BlockGenusMember>scoop_event_change</BlockGenusMember>
-			</BlockDrawer>
-			<BlockDrawer button-color="0 50 45" name="bd.storage" type="factory">
+			</BlockDrawer> -->
+			<!-- <BlockDrawer button-color="0 50 45" name="bd.storage" type="factory">
 				<BlockGenusMember>eeprom_read_int</BlockGenusMember>
 				<BlockGenusMember>eeprom_write_int</BlockGenusMember>
 				<BlockGenusMember>eeprom_read_long</BlockGenusMember>
@@ -11886,25 +12088,38 @@
 				<BlockGenusMember>MaSD_Write</BlockGenusMember>
 				<BlockGenusMember>MaSD_NewLine</BlockGenusMember>
 				<BlockGenusMember>MaSD_separator</BlockGenusMember>
-				<!-- <BlockGenusMember>sd_write</BlockGenusMember> -->
-				<!-- <BlockGenusMember>sd_write_number</BlockGenusMember> -->
-				<!-- <BlockGenusMember>sd_write_number_int</BlockGenusMember> -->
-			</BlockDrawer>
-			<BlockDrawer button-color="169 148 212" name="bd.network" type="factory">
+				<BlockGenusMember>sd_write</BlockGenusMember>
+				<BlockGenusMember>sd_write_number</BlockGenusMember>
+				<BlockGenusMember>sd_write_number_int</BlockGenusMember>
+			</BlockDrawer> -->
+			<!-- <BlockDrawer button-color="169 148 212" name="bd.network" type="factory">
 				<BlockGenusMember>bleshield</BlockGenusMember>
 				<BlockGenusMember>bleshield_available</BlockGenusMember>
 				<BlockGenusMember>bleshield_read_poly</BlockGenusMember>
 				<BlockGenusMember>bleshield_compare</BlockGenusMember>
-			</BlockDrawer>
-			<BlockDrawer button-color="120 120 120" name="bd.especial" type="factory">
+			</BlockDrawer> -->
+			<!-- <BlockDrawer button-color="120 120 120" name="bd.especial" type="factory">
 				<BlockGenusMember>code_head</BlockGenusMember>
 				<BlockGenusMember>code_setup</BlockGenusMember>
 				<BlockGenusMember>code_loop</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_head</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_setup</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_loop</BlockGenusMember>
+			</BlockDrawer> -->
+			<BlockDrawer button-color="13 152 164" name="bd.Elegoo" type="factory">
+				<!-- <BlockGenusMember>Elegoo_LED</BlockGenusMember>
+				<BlockGenusMember>Elegoo_RGB_LED</BlockGenusMember> -->
+				<BlockGenusMember>Elegoo_PushButton</BlockGenusMember>
+				<BlockGenusMember>Elegoo_Keypad</BlockGenusMember>				
+				<BlockGenusMember>Elegoo_Keypad_GetChar</BlockGenusMember>
+				<BlockGenusMember>Elegoo_Keypad_IsKeyPressed</BlockGenusMember>
+				<BlockGenusMember>Elegoo_LCD_Display</BlockGenusMember>
+				<BlockGenusMember>df_digital_infrared_motion_sensor</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_button</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_x</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_y</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="13 152 164" name="bd.tinkerkit" type="factory">
+			<!-- <BlockDrawer button-color="13 152 164" name="bd.tinkerkit" type="factory">
 				<BlockGenusMember>Tinker_LED</BlockGenusMember>
 				<BlockGenusMember>Tinker_LED_pwm</BlockGenusMember>
 				<BlockGenusMember>Tinker_Button</BlockGenusMember>
@@ -11919,7 +12134,7 @@
 				<BlockGenusMember>Tinker_Relay</BlockGenusMember>
 				<BlockGenusMember>Tinker_Mosfet</BlockGenusMember>
 				<BlockGenusMember>Tinker_Mosfet_pwm</BlockGenusMember>
-			</BlockDrawer>
+			</BlockDrawer> 
 			<BlockDrawer button-color="255 102 0" name="bd.dfrobot" type="factory">
 			    <BlockGenusMember>df_led</BlockGenusMember>
 				<BlockGenusMember>df_led_pwm</BlockGenusMember>
@@ -11939,17 +12154,13 @@
 				<BlockGenusMember>df_buzzer_tone_delay</BlockGenusMember>
 				<BlockGenusMember>df_capacitive_touch_sensor</BlockGenusMember>
 				<BlockGenusMember>df_digital_tilt_sensor</BlockGenusMember>
-				<BlockGenusMember>df_digital_infrared_motion_sensor</BlockGenusMember>
 				<BlockGenusMember>df_digital_ir_receiver_module</BlockGenusMember>
 				<BlockGenusMember>df_adjustable_infrared_sensor_switch</BlockGenusMember>
 				<BlockGenusMember>df_line_tracking_sensor</BlockGenusMember>
-				<BlockGenusMember>df_joystick_module_button</BlockGenusMember>
 				<BlockGenusMember>df_digital_magnetic_sensor</BlockGenusMember>
 				<BlockGenusMember>df_pizeo_disk_vibration_sensor</BlockGenusMember>
 				<BlockGenusMember>df_flame_sensor</BlockGenusMember>
 				<BlockGenusMember>df_temperature_sensor</BlockGenusMember>
-				<BlockGenusMember>df_joystick_module_x</BlockGenusMember>
-				<BlockGenusMember>df_joystick_module_y</BlockGenusMember>
 				<BlockGenusMember>df_analog_mma7361_x</BlockGenusMember>
 				<BlockGenusMember>df_analog_mma7361_y</BlockGenusMember>
 				<BlockGenusMember>df_analog_mma7361_z</BlockGenusMember>
@@ -12080,46 +12291,46 @@
 				<BlockGenusMember>DuinoEDU_Nunchuck_BoutonC</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="20 206 20" name="bd.Esplora">
-			<BlockGenusMember>Esplora_Led</BlockGenusMember>
-			<BlockGenusMember>Esplora_tone</BlockGenusMember>
-			<BlockGenusMember>Esplora_notone</BlockGenusMember>
-			<BlockGenusMember>Esplora_Slider</BlockGenusMember>
-			<BlockGenusMember>Esplora_Microphone</BlockGenusMember>
-			<BlockGenusMember>Esplora_LightSensor</BlockGenusMember>
-			<BlockGenusMember>Esplora_Temp</BlockGenusMember>
-			<BlockGenusMember>Esplora_Switch</BlockGenusMember>
-			<BlockGenusMember>Esplora_JoystickSwitch2</BlockGenusMember>
-			<BlockGenusMember>Esplora_JoystickX</BlockGenusMember>
-			<BlockGenusMember>Esplora_JoystickSwitch</BlockGenusMember>
-			<BlockGenusMember>Esplora_AccelerationX</BlockGenusMember>
-			<BlockGenusMember>ESPLORA_INA</BlockGenusMember>
-			<BlockGenusMember>ESPLORA_OUTA</BlockGenusMember>
-			<BlockGenusMember>Esplora_Mouse_Click</BlockGenusMember>
-			<BlockGenusMember>Esplora_Mouse_isPressed</BlockGenusMember>
-			<BlockGenusMember>Esplora_Mouse_move</BlockGenusMember>
-			<BlockGenusMember>Esplora_Keyboard_Click</BlockGenusMember>
-			<BlockGenusMember>Esplora_Keyboard_ReleaseAll</BlockGenusMember>
-			<BlockGenusMember>Esplora_Keyboard_print</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Background</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Height</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Point</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Line</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Circle</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Rect</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Text</BlockGenusMember>
-			<BlockGenusMember>Esplora_Load_Image</BlockGenusMember>
-			<BlockGenusMember>variable_PImage</BlockGenusMember>
-			<BlockGenusMember>Esplora_Image_Width</BlockGenusMember>
-			<BlockGenusMember>Esplora_Image_isValid</BlockGenusMember>
-			<BlockGenusMember>Esplora_TFT_Display_Image</BlockGenusMember>
-			<BlockGenusMember>Espora_SD_Write</BlockGenusMember>
-			<BlockGenusMember>Espora_SD_Begin</BlockGenusMember>
-			<BlockGenusMember>Esplora_Setter_Variable_File</BlockGenusMember>
-			<BlockGenusMember>Esplora_Variable_File</BlockGenusMember>
-			<BlockGenusMember>Esplora_Variable_File_Bool</BlockGenusMember>
-			<BlockGenusMember>Esplora_File_Available</BlockGenusMember>
-			<BlockGenusMember>Esplora_File_Read</BlockGenusMember>
-			<BlockGenusMember>Esplora_File_Close</BlockGenusMember>
+				<BlockGenusMember>Esplora_Led</BlockGenusMember>
+				<BlockGenusMember>Esplora_tone</BlockGenusMember>
+				<BlockGenusMember>Esplora_notone</BlockGenusMember>
+				<BlockGenusMember>Esplora_Slider</BlockGenusMember>
+				<BlockGenusMember>Esplora_Microphone</BlockGenusMember>
+				<BlockGenusMember>Esplora_LightSensor</BlockGenusMember>
+				<BlockGenusMember>Esplora_Temp</BlockGenusMember>
+				<BlockGenusMember>Esplora_Switch</BlockGenusMember>
+				<BlockGenusMember>Esplora_JoystickSwitch2</BlockGenusMember>
+				<BlockGenusMember>Esplora_JoystickX</BlockGenusMember>
+				<BlockGenusMember>Esplora_JoystickSwitch</BlockGenusMember>
+				<BlockGenusMember>Esplora_AccelerationX</BlockGenusMember>
+				<BlockGenusMember>ESPLORA_INA</BlockGenusMember>
+				<BlockGenusMember>ESPLORA_OUTA</BlockGenusMember>
+				<BlockGenusMember>Esplora_Mouse_Click</BlockGenusMember>
+				<BlockGenusMember>Esplora_Mouse_isPressed</BlockGenusMember>
+				<BlockGenusMember>Esplora_Mouse_move</BlockGenusMember>
+				<BlockGenusMember>Esplora_Keyboard_Click</BlockGenusMember>
+				<BlockGenusMember>Esplora_Keyboard_ReleaseAll</BlockGenusMember>
+				<BlockGenusMember>Esplora_Keyboard_print</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Background</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Height</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Point</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Line</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Circle</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Rect</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Text</BlockGenusMember>
+				<BlockGenusMember>Esplora_Load_Image</BlockGenusMember>
+				<BlockGenusMember>variable_PImage</BlockGenusMember>
+				<BlockGenusMember>Esplora_Image_Width</BlockGenusMember>
+				<BlockGenusMember>Esplora_Image_isValid</BlockGenusMember>
+				<BlockGenusMember>Esplora_TFT_Display_Image</BlockGenusMember>
+				<BlockGenusMember>Espora_SD_Write</BlockGenusMember>
+				<BlockGenusMember>Espora_SD_Begin</BlockGenusMember>
+				<BlockGenusMember>Esplora_Setter_Variable_File</BlockGenusMember>
+				<BlockGenusMember>Esplora_Variable_File</BlockGenusMember>
+				<BlockGenusMember>Esplora_Variable_File_Bool</BlockGenusMember>
+				<BlockGenusMember>Esplora_File_Available</BlockGenusMember>
+				<BlockGenusMember>Esplora_File_Read</BlockGenusMember>
+				<BlockGenusMember>Esplora_File_Close</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="216 5 10" name="bd.adafruit" type="factory">
 				<BlockGenusMember>ada_dc_motor_fwd</BlockGenusMember>
@@ -12147,26 +12358,6 @@
 				<BlockGenusMember>me_motor_1</BlockGenusMember>
 				<BlockGenusMember>me_shutter_1</BlockGenusMember>
 			</BlockDrawer>
-			<!-- 
-			<BlockDrawer button-color="225 116 116" name="bd.workshop" type="factory">
-			    <BlockGenusMember>ws_setting</BlockGenusMember>
-			    <BlockGenusMember>ws_go_forward</BlockGenusMember>
-				<BlockGenusMember>ws_go_backward</BlockGenusMember>
-				<BlockGenusMember>ws_stop</BlockGenusMember>
-				<BlockGenusMember>ws_turn_left</BlockGenusMember>
-				<BlockGenusMember>ws_turn_right</BlockGenusMember>
-				<BlockGenusMember>ws_go_forward_left</BlockGenusMember>
-				<BlockGenusMember>ws_go_forward_right</BlockGenusMember>
-				<BlockGenusMember>ws_go_backward_left</BlockGenusMember>
-				<BlockGenusMember>ws_go_backward_right</BlockGenusMember>
-				<BlockGenusMember>ws_light</BlockGenusMember>
-				<BlockGenusMember>ws_scan</BlockGenusMember>
-				<BlockGenusMember>ws_music</BlockGenusMember>
-				<BlockGenusMember>ws_wireless</BlockGenusMember>
-				<BlockGenusMember>ws_danger</BlockGenusMember>
-				<BlockGenusMember>ws_binoculars</BlockGenusMember>
-			</BlockDrawer>
-			 -->
 			<BlockDrawer button-color="64 109 0" name="bd.insectbot">
 			    <BlockGenusMember>insectbot_get_distance</BlockGenusMember>
 			    <BlockGenusMember>insectbot_is_indanger</BlockGenusMember>
@@ -12175,7 +12366,6 @@
 			    <BlockGenusMember>insectbot_turn_left</BlockGenusMember>
 			    <BlockGenusMember>insectbot_blink_led</BlockGenusMember>
 			</BlockDrawer>
-			<!-- iDrawing -->
 			<BlockDrawer button-color="255 102 0" name="bd.iDrawing">
 			    <BlockGenusMember>iDrawing_set_para</BlockGenusMember>
 			    <BlockGenusMember>iDrawing_run</BlockGenusMember>
@@ -12204,7 +12394,6 @@
 			    <BlockGenusMember>trigger_greater</BlockGenusMember>
 			    <BlockGenusMember>trigger_less</BlockGenusMember>		    
 			</BlockDrawer>
-			<!-- littlebits -->
 			<BlockDrawer button-color="93 13 125" name="bd.littlebits">
 			    <BlockGenusMember>little_bits_bendsensor</BlockGenusMember>
 			    <BlockGenusMember>little_bits_button</BlockGenusMember>
@@ -12239,16 +12428,6 @@
 			    <BlockGenusMember>little_bits_vibration_motor</BlockGenusMember>
 			    <BlockGenusMember>little_bits_synthspeaker</BlockGenusMember>
 			</BlockDrawer>
-			<!-- dbrobot bluno Causes warning "Invalid Drawer: trying to add a drawer that already exists: DFRobot" -->
-<!-- 			<BlockDrawer button-color="255 102 0" name="bd.dfrobot" type="factory"> -->
-<!-- 				<BlockGenusMember>bluno_println</BlockGenusMember> -->
-<!-- 				<BlockGenusMember>bluno_println_number</BlockGenusMember> -->
-<!-- 				<BlockGenusMember>bluno_println_clear</BlockGenusMember> -->
-<!-- 				<BlockGenusMember>df_romeo_motors</BlockGenusMember> -->
-<!-- 				<BlockGenusMember>df_romeo_motor</BlockGenusMember> -->
-<!-- 				<BlockGenusMember>df_romeo_motor_stop</BlockGenusMember> -->
-<!-- 			</BlockDrawer> 	 -->
-			<!-- keenlon -->			
 			<BlockDrawer button-color="20 150 30" name="bd.ke-keenlon">
 				<BlockGenusMember>ke-motor-run</BlockGenusMember>
 				<BlockGenusMember>ke-motor-setmoto</BlockGenusMember>	
@@ -12277,12 +12456,10 @@
 				<BlockGenusMember>ke-psd</BlockGenusMember>								
 				<BlockGenusMember>ke-servo</BlockGenusMember>																		
 			</BlockDrawer> 	
-
-			<BlockDrawer button-color="152 29 155" name="bd.jerusalab" type="factory">
+ 			<BlockDrawer button-color="152 29 155" name="bd.jerusalab" type="factory">
 				<BlockGenusMember>midi_command</BlockGenusMember>
-				<!-- <BlockGenusMember>midi_note</BlockGenusMember> -->
+				<BlockGenusMember>midi_note</BlockGenusMember>
 			</BlockDrawer>
-			<!--
 			<BlockDrawer button-color="135 206 235" name="bd.linksprite_LinkerKit">
 				<BlockGenusMember>ls_10mmLEDModule</BlockGenusMember>
 				<BlockGenusMember>ls_5mmLEDModule</BlockGenusMember>
@@ -12308,8 +12485,6 @@
 				<BlockGenusMember>ls_TiltModule</BlockGenusMember>
 				<BlockGenusMember>ls_TouchSensorModule</BlockGenusMember>
 			</BlockDrawer>
-			-->
-			<!--
 			<BlockDrawer button-color="0 255 0" name="XinChejian" type="factory">
 				<BlockGenusMember>xcj_motor_forward</BlockGenusMember>
 				<BlockGenusMember>xcj_motor_backward</BlockGenusMember> 

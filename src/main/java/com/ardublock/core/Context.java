@@ -3,21 +3,11 @@ package com.ardublock.core;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.xml.sax.SAXException;
 
 import processing.app.Editor;
 
@@ -25,7 +15,6 @@ import com.ardublock.ui.listener.OpenblocksFrameListener;
 
 import edu.mit.blocks.codeblocks.Block;
 import edu.mit.blocks.controller.WorkspaceController;
-import edu.mit.blocks.renderable.BlockUtilities;
 import edu.mit.blocks.renderable.FactoryRenderableBlock;
 import edu.mit.blocks.renderable.RenderableBlock;
 import edu.mit.blocks.workspace.FactoryManager;
@@ -151,23 +140,19 @@ public class Context
 		}
 		catch (ParserConfigurationException e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		catch (SAXException e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		catch (IllegalArgumentException e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			workspaceController.loadFreshWorkspace();
 		}
 		catch (IOException e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			workspaceController.loadFreshWorkspace();
 		}
@@ -178,7 +163,7 @@ public class Context
 		
 		FactoryManager manager = workspace.getFactoryManager();
 		Block newBlock;
-        newBlock = new Block(workspace, "loop", false);
+        newBlock = new Block(workspace, "program", false);
         FactoryRenderableBlock factoryRenderableBlock = new FactoryRenderableBlock(workspace, manager, newBlock.getBlockID());
         RenderableBlock renderableBlock = factoryRenderableBlock.createNewInstance();
         renderableBlock.setLocation(100, 100);
