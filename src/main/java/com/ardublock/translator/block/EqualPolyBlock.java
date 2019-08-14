@@ -14,13 +14,16 @@ public class EqualPolyBlock extends TranslatorBlock
 	@Override
 	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 	{
-		String ret = "( ( ";
+		// String ret = "(";
+		String ret = "";
 		TranslatorBlock tb = this.getRequiredTranslatorBlockAtSocket(0);
-		ret = ret + tb.toCode().replace("\"","\'");
-		ret = ret + " ) == (";
+		ret = ret + tb.toCode();
+		//ret = ret + tb.toCode().replace("\"","\'");
+		ret = ret + " == ";
 		tb = this.getRequiredTranslatorBlockAtSocket(1);
-		ret = ret + tb.toCode().replace("\"","\'");
-		ret = ret + ") )";
+		ret = ret + tb.toCode();
+		//ret = ret + tb.toCode().replace("\"","\'");
+		// ret = ret + ")";
 		return codePrefix + ret + codeSuffix;
 	}
 }

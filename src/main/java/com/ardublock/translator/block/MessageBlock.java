@@ -24,10 +24,14 @@ public class MessageBlock extends TranslatorBlock
 		// A way to add \t to messages
 		ret = ret.replaceAll("<&tab>", "\\\\t");
 		ret = codePrefix + "\"" + ret + "\"" + codeSuffix;
-		TranslatorBlock translatorBlock = this.getTranslatorBlockAtSocket(0, codePrefix, codeSuffix);
-		if (translatorBlock != null)
-		{
-			ret = ret + translatorBlock.toCode();
+		try {
+			TranslatorBlock translatorBlock = this.getTranslatorBlockAtSocket(0, codePrefix, codeSuffix);
+			if (translatorBlock != null)
+			{
+				ret = ret + translatorBlock.toCode();
+			}
+		} catch (Exception e) {
+			//Nothing to do : no inner block
 		}
 		return ret;
 	}

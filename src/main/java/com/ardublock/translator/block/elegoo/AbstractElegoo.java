@@ -46,9 +46,9 @@ public abstract class AbstractElegoo extends TranslatorBlock {
 			result.argType = ArgType.number;
 			try {
 				int pinNumber = Integer.parseInt(val);
-				if ((pinNumber < 0) || (pinNumber > 51))
+				if ((pinNumber < 0) || (pinNumber > 53))
 					throw new BlockException(blockId,
-							controlDisplayName + " : le numéro de la broche doit être entre 0 et 51");
+							controlDisplayName + " : le numéro de la broche doit être entre 0 et 53");
 				switch (digitalType) {
 				case pull_up:
 					translator.addPullupDigitalPin(pinNumber);

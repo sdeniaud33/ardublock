@@ -18,12 +18,14 @@ public class SerialPrintBlock extends TranslatorBlock
 		 * DO NOT add tab in code any more, we'll use arduino to format code, or the code will duplicated. 
 		 */
 		translator.addSetupCommand("Serial.begin(9600);");
-		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0, "Serial.print(", ");\nSerial.print(\" \");\n");
+		// TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0, "Serial.print(", ");\nSerial.print(\" \");\n");
+		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
 		
-		String ret = translatorBlock.toCode();
+		String ret = "Serial.print(";
+		ret += translatorBlock.toCode();
+		ret += ");\n";
 		translatorBlock = this.getRequiredTranslatorBlockAtSocket(1);
-		String test=translatorBlock.toCode();
-//		ret+=test;
+		String test = translatorBlock.toCode();
 		if(test.equals("true")){
 		    ret+="Serial.println();\n";
 		}

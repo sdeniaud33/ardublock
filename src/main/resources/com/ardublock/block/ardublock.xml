@@ -1831,7 +1831,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-				<BlockGenus name="equal_string" kind="function" color="92 183 19" initlabel="bg.equal_string">
+		<BlockGenus name="equal_string" kind="function" color="92 183 19" initlabel="bg.equal_string">
 			<description>
 				<text>is upper number greater then lower?</text>
 			</description>
@@ -2567,16 +2567,6 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="message" kind="data" color="70 70 70" initlabel="bg.message" editable-label="yes">
-			<description>
-				<text>string message</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="string" connector-kind="plug" />
-				<BlockConnector connector-type="string" connector-kind="socket" />
-			</BlockConnectors>
-		</BlockGenus>
-
 		<BlockGenus name="glue_sn" kind="data" color="70 70 70" initlabel="bg.glue_sn">
 			<description>
 				<text>glue number to string</text>
@@ -3181,7 +3171,66 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+		<BlockGenus name="Elegoo_NFC_GetCard" kind="data" color="13 152 164" initlabel="bg.Elegoo_NFC_GetCard">
+			<description>
+				<text>N° carte</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="plug" />
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Elegoo_NFC_Controler" kind="command" color="13 152 164" initlabel="bg.Elegoo_NFC_Controler">
+			<description>
+				<text>Lecteur de carte</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.Elegoo_pin_reset">
+					<DefaultArg genus-name="number" label="12" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.Elegoo_pin_sda">
+					<DefaultArg genus-name="number" label="53" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/elegoo/elegoo_NFC_Controler.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
+		<!--************************************************************** Strings ********************************************************************** -->
+		<BlockGenus name="stringAdd" kind="function" color="70 70 70" initlabel="bg.stringAdd">
+			<description>
+				<text>Ajoute 2 chaines de caracteres</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="plug" position-type="bottom" >
+					<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+					<DefaultArg genus-name="dummy" label="" />
+				</BlockConnector>
+				<BlockConnector connector-type="string" connector-kind="socket" label="Texte 1">
+					<DefaultArg genus-name="message" label="texte 1" />
+				</BlockConnector>
+				<BlockConnector connector-type="string" connector-kind="socket" label="Texte 2">
+					<DefaultArg genus-name="message" label="texte 2" />
+				</BlockConnector>
+				<!-- <BlockConnector connector-type="string" connector-kind="socket" position-type="bottom">
+						<DefaultArg genus-name="message" label="texte_1" />
+				</BlockConnector> -->
+				<!-- <BlockConnector connector-type="string" connector-kind="socket" position-type="bottom">
+						<DefaultArg genus-name="message" label="texte_2" />
+				</BlockConnector> -->
+			</BlockConnectors>
+		</BlockGenus>	
+
+		<BlockGenus name="message" kind="data" color="70 70 70" initlabel="bg.message" editable-label="yes">
+			<description>
+				<text>string message</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
 
 
 
@@ -11928,9 +11977,6 @@
 				<BlockGenusMember>not_equal_digital</BlockGenusMember>
 				<BlockGenusMember>equal_poly</BlockGenusMember>
 				<BlockGenusMember>not_equal_poly</BlockGenusMember>
-				<BlockGenusMember>equal_string</BlockGenusMember>
-				<BlockGenusMember>not_equal_string</BlockGenusMember>
-				<BlockGenusMember>string_empty</BlockGenusMember>
 				<BlockGenusMember>and</BlockGenusMember>
 				<BlockGenusMember>or</BlockGenusMember>
 				<BlockGenusMember>not</BlockGenusMember>
@@ -12114,11 +12160,21 @@
 				<BlockGenusMember>Elegoo_Keypad_GetChar</BlockGenusMember>
 				<BlockGenusMember>Elegoo_Keypad_IsKeyPressed</BlockGenusMember>
 				<BlockGenusMember>Elegoo_LCD_Display</BlockGenusMember>
+				<BlockGenusMember>Elegoo_NFC_Controler</BlockGenusMember>
+				<BlockGenusMember>Elegoo_NFC_GetCard</BlockGenusMember>
 				<BlockGenusMember>df_digital_infrared_motion_sensor</BlockGenusMember>
 				<BlockGenusMember>df_joystick_module_button</BlockGenusMember>
 				<BlockGenusMember>df_joystick_module_x</BlockGenusMember>
 				<BlockGenusMember>df_joystick_module_y</BlockGenusMember>
 			</BlockDrawer>
+			<BlockDrawer button-color="70 70 70" name="bd.strings" type="factory">
+				<BlockGenusMember>message</BlockGenusMember>
+				<BlockGenusMember>stringAdd</BlockGenusMember>
+				<BlockGenusMember>equal_string</BlockGenusMember>
+				<BlockGenusMember>not_equal_string</BlockGenusMember>
+				<BlockGenusMember>string_empty</BlockGenusMember>
+			</BlockDrawer>
+
 			<!-- <BlockDrawer button-color="13 152 164" name="bd.tinkerkit" type="factory">
 				<BlockGenusMember>Tinker_LED</BlockGenusMember>
 				<BlockGenusMember>Tinker_LED_pwm</BlockGenusMember>
