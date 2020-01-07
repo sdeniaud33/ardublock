@@ -3139,7 +3139,9 @@
 				<text>Pressed key</text>
 			</description>
 			<BlockConnectors>
-				<BlockConnector connector-type="string" connector-kind="plug" label="letter"/>
+				<BlockConnector connector-type="poly" connector-kind="plug" />
+
+				<!-- <BlockConnector connector-type="string" connector-kind="plug" label="letter"/> -->
 			</BlockConnectors>
 		</BlockGenus>
 		<BlockGenus name="Elegoo_Keypad_IsKeyPressed" kind="data" color="13 152 164" initlabel="bg.Elegoo_Keypad_IsKeyPressed">

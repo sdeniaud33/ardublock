@@ -1,6 +1,5 @@
 .metadata/
 build/
-target/
 .DS_Store
 .classpath
 .idea
@@ -11,9 +10,10 @@ bin/
 .settings/
 *~
 src/main/resources/com/ardublock/block/ardublock.zip
-deploy.sh
-<<<<<<< HEAD
-=======
-test-output
-src/main/resources/com/ardublock/block/littlebits/files
->>>>>>> upstream/master
+/openblocks/target
+/target/classes/
+/target/test-classes/
+/target/surefire-reports/
+/.vscode/launch.json
+/target/ardublock-0.1.0-SNAPSHOT.jar
+/target/maven-archiver/pom.properties
